@@ -206,10 +206,10 @@ BACK TO GRADE SELECTION
 
 ### System Requirements
 - **OS**: Windows 10/11
-- **RAM**: 2GB minimum
+- **RAM**: 50MB minimum
 - **Display**: 1000x700 minimum resolution
 - **Audio**: Speakers or headphones recommended
-- **Storage**: ~50MB free space
+- **Storage**: ~30MB free space
 
 ### Troubleshooting
 - **Won't Launch?** Right-click → Run as Administrator
