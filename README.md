@@ -10,7 +10,7 @@ Un emocionante juego educativo de matemáticas con una cautivadora temática esp
 
 ## 🎮 ¿Qué es EduMath?
 
-EduMath Adventure transforma la práctica de matemáticas en una emocionante aventura de exploración espacial. Diseñado para estudiantes de 1° a 6° grado, el juego adapta su dificultad al nivel de cada estudiante, haciendo que la práctica matemática sea divertida y entretenida.
+EduMath transforma la práctica de matemáticas en una emocionante aventura de exploración espacial. Diseñado para estudiantes de 1° a 6° grado, el juego adapta su dificultad al nivel de cada estudiante, haciendo que la práctica matemática sea divertida y entretenida.
 
 ### 🌟 ¿Por qué este juego?
 - **Aprendizaje Adaptativo**: Cada grado tiene una dificultad cuidadosamente calibrada
