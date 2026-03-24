@@ -1,4 +1,4 @@
-# 🚀 EduMath- Juego Educativo de Matemáticas
+# 🚀 EduMath - Juego Educativo de Matemáticas
 
 Un emocionante juego educativo de matemáticas con una cautivadora temática espacial, diseñado para estudiantes de primaria. ¡Viaja por el cosmos resolviendo problemas matemáticos, ganando estrellas y convirtiéndote en un maestro astronauta matemático!
 
