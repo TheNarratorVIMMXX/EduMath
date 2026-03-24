@@ -205,7 +205,7 @@ REGRESO A LA SELECCIÓN DE GRADO
 
 ### Requisitos del Sistema
 - **Sistema operativo**: Windows 10/11
-- **RAM**: Mínimo 50 MB
+- **RAM**: 2GB Mínimo
 - **Pantalla**: Resolución mínima de 1000x700
 - **Audio**: Se recomiendan altavoces o auriculares
 - **Almacenamiento**: ~30 MB de espacio libre
