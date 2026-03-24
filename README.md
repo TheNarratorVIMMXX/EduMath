@@ -1,268 +1,267 @@
-# 🚀 Space Math Adventure - Educational Math Game
+# 🚀 EduMath- Juego Educativo de Matemáticas
 
-An engaging educational mathematics game with a captivating space theme designed for elementary school students. Travel through the cosmos while solving math problems, earning stars, and becoming a master astronaut mathematician!
+Un emocionante juego educativo de matemáticas con una cautivadora temática espacial, diseñado para estudiantes de primaria. ¡Viaja por el cosmos resolviendo problemas matemáticos, ganando estrellas y convirtiéndote en un maestro astronauta matemático!
 
-## 👨‍🎓 Developer Information
+## 👨‍🎓 Información del Desarrollador
 
-**Developer:** Magallanes López Carlos Gabriel  
-**Email:** cgmagallanes23@gmail.com  
-**Last Modified:** December 16, 2025
+**Desarrollador:** Magallanes López Carlos Gabriel
+**Correo electrónico:** cgmagallanes23@gmail.com
+**Última modificación:** 16 de diciembre de 2025
 
-## 🎮 What is Space Math Adventure?
+## 🎮 ¿Qué es EduMath?
 
-Space Math Adventure transforms math practice into an exciting space exploration journey. Designed for students from 1st to 6th grade, this game adapts its difficulty to match each student's grade level, making math practice fun and engaging.
+EduMath Adventure transforma la práctica de matemáticas en una emocionante aventura de exploración espacial. Diseñado para estudiantes de 1° a 6° grado, el juego adapta su dificultad al nivel de cada estudiante, haciendo que la práctica matemática sea divertida y entretenida.
 
-### 🌟 Why This Game?
-- **Adaptive Learning**: Each grade level has carefully calibrated difficulty
-- **Instant Feedback**: Learn from mistakes immediately with visual and audio cues
-- **Motivational Design**: Earn stars and achievements to track progress
-- **Engaging Theme**: Beautiful space environment with animated characters
-- **Educational Focus**: Reinforces core math skills through repetition and practice
+### 🌟 ¿Por qué este juego?
+- **Aprendizaje Adaptativo**: Cada grado tiene una dificultad cuidadosamente calibrada
+- **Retroalimentación Inmediata**: Aprende de tus errores al instante con señales visuales y de audio
+- **Diseño Motivacional**: Gana estrellas y logros para seguir tu progreso
+- **Temática Atractiva**: Hermoso entorno espacial con personajes animados
+- **Enfoque Educativo**: Refuerza las habilidades matemáticas esenciales mediante repetición y práctica
 
-## 🎯 How to Play
+## 🎯 Cómo Jugar
 
-### Getting Started
-1. **Launch the game** - Double-click the executable file
-2. **Wait for the intro** - Enjoy the animated welcome screen
-3. **Press ENTER** - Move to the grade selection menu
-4. **Choose your grade** - Click on your school grade (1st through 6th)
-5. **Start solving** - Answer 10 math questions appropriate to your level
+### Primeros Pasos
+1. **Inicia el juego** - Haz doble clic en el archivo ejecutable
+2. **Espera la intro** - Disfruta de la pantalla de bienvenida animada
+3. **Presiona ENTER** - Avanza al menú de selección de grado
+4. **Elige tu grado** - Haz clic en tu grado escolar (1° a 6°)
+5. **Empieza a resolver** - Responde 10 preguntas matemáticas adecuadas a tu nivel
 
-### Game Controls
-| Control | Action |
+### Controles del Juego
+| Control | Acción |
 |---------|--------|
-| **Mouse Click** | Select grade buttons and navigate menus |
-| **Number Keys (0-9)** | Enter your answer (works with numpad too) |
-| **Minus Key (-)** | Enter negative numbers |
-| **Backspace** | Delete the last digit |
-| **Enter** | Submit your answer or continue |
-| **ESC** | Exit the game anytime |
+| **Clic del ratón** | Seleccionar botones de grado y navegar por los menús |
+| **Teclas numéricas (0-9)** | Ingresar tu respuesta (también funciona con el teclado numérico) |
+| **Tecla Menos (-)** | Ingresar números negativos |
+| **Backspace** | Eliminar el último dígito |
+| **Enter** | Enviar tu respuesta o continuar |
+| **ESC** | Salir del juego en cualquier momento |
 
-### Understanding the Interface
+### Comprendiendo la Interfaz
 
-#### During Gameplay
-- **Top Left**: Your current grade level
-- **Top Center**: Question progress (e.g., "Question 3/10")
-- **Progress Bar**: Visual representation of completion
-- **Top Right**: Stars earned this session (⭐)
-- **Center**: The math problem to solve
-- **Input Field**: Where you type your answer (with blinking cursor)
-- **Bottom**: Feedback messages and instructions
+#### Durante el Juego
+- **Arriba a la izquierda**: Tu grado actual
+- **Arriba al centro**: Progreso de preguntas (ej. "Pregunta 3/10")
+- **Barra de progreso**: Representación visual del avance
+- **Arriba a la derecha**: Estrellas ganadas en la sesión (⭐)
+- **Centro**: El problema matemático a resolver
+- **Campo de entrada**: Donde escribes tu respuesta (con cursor parpadeante)
+- **Abajo**: Mensajes de retroalimentación e instrucciones
 
-#### Results Screen
-- **Mission Status**: Your astronaut rank based on performance
-- **Star Display**: Visual representation of correct answers
-- **Statistics**: Detailed breakdown of your performance
-- **Total Stars**: Cumulative stars across all sessions
+#### Pantalla de Resultados
+- **Estado de la misión**: Tu rango de astronauta según tu desempeño
+- **Visualización de estrellas**: Representación visual de respuestas correctas
+- **Estadísticas**: Desglose detallado de tu rendimiento
+- **Estrellas totales**: Estrellas acumuladas en todas las sesiones
 
-## 📊 Grade Levels & Difficulty
+## 📊 Niveles y Dificultad por Grado
 
-The game adapts to six different grade levels, each with appropriate challenges:
+El juego se adapta a seis niveles diferentes, cada uno con desafíos apropiados:
 
-### 🎓 Grade 1 (Ages 6-7)
-**Operations:** Addition (+), Subtraction (-)  
-**Number Range:** 1-20  
-**Example:** `8 + 5 = ???` or `12 - 4 = ???`  
-**Focus:** Basic number sense and single-digit operations
+### 🎓 1° Grado (6-7 años)
+**Operaciones:** Suma (+), Resta (-)
+**Rango de números:** 1-20
+**Ejemplo:** `8 + 5 = ???` o `12 - 4 = ???`
+**Enfoque:** Sentido numérico básico y operaciones con un solo dígito
 
-### 🎓 Grade 2 (Ages 7-8)
-**Operations:** Addition (+), Subtraction (-)  
-**Number Range:** 10-50  
-**Example:** `27 + 18 = ???` or `35 - 12 = ???`  
-**Focus:** Two-digit operations and mental math
+### 🎓 2° Grado (7-8 años)
+**Operaciones:** Suma (+), Resta (-)
+**Rango de números:** 10-50
+**Ejemplo:** `27 + 18 = ???` o `35 - 12 = ???`
+**Enfoque:** Operaciones con dos dígitos y cálculo mental
 
-### 🎓 Grade 3 (Ages 8-9)
-**Operations:** Addition (+), Subtraction (-), Multiplication (×)  
-**Number Range:** 10-60  
-**Example:** `7 × 8 = ???` or `45 - 17 = ???`  
-**Focus:** Introduction to multiplication tables
+### 🎓 3° Grado (8-9 años)
+**Operaciones:** Suma (+), Resta (-), Multiplicación (×)
+**Rango de números:** 10-60
+**Ejemplo:** `7 × 8 = ???` o `45 - 17 = ???`
+**Enfoque:** Introducción a las tablas de multiplicar
 
-### 🎓 Grade 4 (Ages 9-10)
-**Operations:** Addition (+), Subtraction (-), Multiplication (×), Division (÷)  
-**Number Range:** 20-100  
-**Example:** `48 ÷ 6 = ???` or `12 × 7 = ???`  
-**Focus:** All four basic operations
+### 🎓 4° Grado (9-10 años)
+**Operaciones:** Suma (+), Resta (-), Multiplicación (×), División (÷)
+**Rango de números:** 20-100
+**Ejemplo:** `48 ÷ 6 = ???` o `12 × 7 = ???`
+**Enfoque:** Las cuatro operaciones básicas
 
-### 🎓 Grade 5 (Ages 10-11)
-**Operations:** All four operations  
-**Number Range:** 100-500  
-**Example:** `384 + 127 = ???` or `144 ÷ 12 = ???`  
-**Focus:** Larger numbers and mental calculation strategies
+### 🎓 5° Grado (10-11 años)
+**Operaciones:** Las cuatro operaciones
+**Rango de números:** 100-500
+**Ejemplo:** `384 + 127 = ???` o `144 ÷ 12 = ???`
+**Enfoque:** Números más grandes y estrategias de cálculo mental
 
-### 🎓 Grade 6 (Ages 11-12)
-**Operations:** All four operations  
-**Number Range:** 500-1500  
-**Example:** `875 - 392 = ???` or `25 × 48 = ???`  
-**Focus:** Advanced calculations and number fluency
+### 🎓 6° Grado (11-12 años)
+**Operaciones:** Las cuatro operaciones
+**Rango de números:** 500-1500
+**Ejemplo:** `875 - 392 = ???` o `25 × 48 = ???`
+**Enfoque:** Cálculos avanzados y fluidez numérica
 
-## 🏆 Scoring & Achievements
+## 🏆 Puntuación y Logros
 
-### Star System
-- **⭐ 1 Star** per correct answer
-- **10 Stars** maximum per session
-- **Cumulative tracking** across all game sessions
+### Sistema de Estrellas
+- **⭐ 1 estrella** por cada respuesta correcta
+- **10 estrellas** máximo por sesión
+- **Seguimiento acumulativo** entre todas las sesiones de juego
 
-### Astronaut Ranks
-Based on your percentage of correct answers:
+### Rangos de Astronauta
+Basados en el porcentaje de respuestas correctas:
 
-| Score | Rank | Message |
-|-------|------|---------|
-| 90-100% | 🚀 **Expert Astronaut** | "¡ASTRONAUTA EXPERTO!" |
-| 70-89% | 🌟 **Space Explorer** | "¡EXPLORADOR ESPACIAL!" |
-| 50-69% | ⭐ **Cadet in Training** | "¡CADETE EN ENTRENAMIENTO!" |
-| 0-49% | 💪 **Keep Practicing** | "¡SIGUE PRACTICANDO!" |
+| Puntaje | Rango | Mensaje |
+|---------|-------|---------|
+| 90-100% | 🚀 **Astronauta Experto** | "¡ASTRONAUTA EXPERTO!" |
+| 70-89% | 🌟 **Explorador Espacial** | "¡EXPLORADOR ESPACIAL!" |
+| 50-69% | ⭐ **Cadete en Entrenamiento** | "¡CADETE EN ENTRENAMIENTO!" |
+| 0-49% | 💪 **Sigue Practicando** | "¡SIGUE PRACTICANDO!" |
 
-### What Happens When You Answer?
+### ¿Qué ocurre al responder?
 
-#### ✅ Correct Answer
-- **Visual Feedback**: Green "¡EXCELENTE!" message with particle explosion
-- **Audio**: Cheerful success sound
-- **Robot Emotion**: Excited and happy
-- **Reward**: +1 star added to your total
-- **Next**: Automatic progression to next question
+#### ✅ Respuesta Correcta
+- **Retroalimentación visual**: Mensaje verde "¡EXCELENTE!" con explosión de partículas
+- **Audio**: Sonido alegre de éxito
+- **Emoción del robot**: Emocionado y feliz
+- **Recompensa**: +1 estrella añadida a tu total
+- **Siguiente**: Avance automático a la siguiente pregunta
 
-#### ❌ Wrong Answer
-- **Visual Feedback**: Red message showing the correct answer
-- **Audio**: Gentle error sound (not harsh)
-- **Robot Emotion**: Sad but supportive
-- **Learning**: See the correct answer for understanding
-- **Next**: Move to next question after reviewing
+#### ❌ Respuesta Incorrecta
+- **Retroalimentación visual**: Mensaje rojo mostrando la respuesta correcta
+- **Audio**: Sonido de error suave (no molesto)
+- **Emoción del robot**: Triste pero alentador
+- **Aprendizaje**: Visualiza la respuesta correcta para comprender
+- **Siguiente**: Avance a la siguiente pregunta tras revisar
 
-## 🎨 Game Features
+## 🎨 Características del Juego
 
-### Visual Elements
-- **Animated Background**: Twinkling stars and rotating planets
-- **Particle Effects**: Colorful celebrations for correct answers
-- **Gradient UI**: Beautiful color transitions throughout
-- **Smooth Animations**: Professional-grade movement and transitions
-- **Flying Rockets**: Decorative space vehicles on transitions
+### Elementos Visuales
+- **Fondo animado**: Estrellas parpadeantes y planetas giratorios
+- **Efectos de partículas**: Celebraciones coloridas al responder correctamente
+- **Interfaz degradada**: Hermosas transiciones de color en toda la pantalla
+- **Animaciones fluidas**: Movimiento y transiciones de nivel profesional
+- **Cohetes voladores**: Vehículos espaciales decorativos en las transiciones
 
-### Audio Experience
-- **Background Music**: Relaxing space-themed soundtrack (loops continuously)
-- **Success Sound**: Rewarding chime for correct answers
-- **Error Sound**: Gentle notification for mistakes
-- **Volume**: Balanced for comfortable gameplay
+### Experiencia de Audio
+- **Música de fondo**: Banda sonora relajante de temática espacial (en bucle continuo)
+- **Sonido de éxito**: Campanilla gratificante para respuestas correctas
+- **Sonido de error**: Notificación suave para los errores
+- **Volumen**: Balanceado para una jugabilidad cómoda
 
-### Character Interactions
-**Guide Robot** - Your friendly companion throughout the game
-- **Happy**: Default state, encouraging you
-- **Excited**: Celebrates your correct answers
-- **Sad**: Shows empathy when you make mistakes
+### Interacciones con el Personaje
+**Robot guía** - Tu compañero amigable durante todo el juego
+- **Feliz**: Estado por defecto, animándote
+- **Emocionado**: Celebra tus respuestas correctas
+- **Triste**: Muestra empatía cuando cometes errores
 
-## 🎮 Game Flow
+## 🎮 Flujo del Juego
 ```
-START GAME
+INICIO DEL JUEGO
     ↓
-INTRO SCREEN (Animated title)
+PANTALLA DE INTRODUCCIÓN (Título animado)
     ↓
-PRESS ENTER
+PRESIONA ENTER
     ↓
-GRADE SELECTION MENU (Choose 1st-6th grade)
+MENÚ DE SELECCIÓN DE GRADO (Elige de 1° a 6°)
     ↓
-CLICK YOUR GRADE
+HAZ CLIC EN TU GRADO
     ↓
-GAMEPLAY LOOP (10 questions)
+BUCLE DE JUEGO (10 preguntas)
     ↓
-    • Question displayed
-    • Type your answer
-    • Press ENTER
-    • Get feedback
-    • See next question
+    • Se muestra la pregunta
+    • Escribe tu respuesta
+    • Presiona ENTER
+    • Recibe retroalimentación
+    • Ve la siguiente pregunta
     ↓
-RESULTS SCREEN
+PANTALLA DE RESULTADOS
     ↓
-    • View your rank
-    • See statistics
-    • Check total stars
-    • Click "VOLVER AL MENÚ PRINCIPAL"
+    • Ve tu rango
+    • Consulta las estadísticas
+    • Revisa el total de estrellas
+    • Haz clic en "VOLVER AL MENÚ PRINCIPAL"
     ↓
-BACK TO GRADE SELECTION
+REGRESO A LA SELECCIÓN DE GRADO
 ```
 
-## 💡 Tips for Parents & Teachers
+## 💡 Consejos para Padres y Maestros
 
-### Maximize Learning
-- **Regular Practice**: Short 10-minute sessions daily are more effective than long sessions
-- **Grade Appropriate**: Always select the correct grade level for accurate difficulty
-- **Review Mistakes**: When the game shows the correct answer, discuss why
-- **Celebrate Progress**: Use the star system to track improvement over time
-- **No Pressure**: The game is designed to be encouraging, not stressful
+### Maximizar el Aprendizaje
+- **Práctica regular**: Sesiones cortas de 10 minutos diarios son más efectivas que sesiones largas
+- **Grado apropiado**: Selecciona siempre el nivel correcto para una dificultad adecuada
+- **Revisar errores**: Cuando el juego muestre la respuesta correcta, discútela con el estudiante
+- **Celebrar el progreso**: Usa el sistema de estrellas para seguir la mejora con el tiempo
+- **Sin presión**: El juego está diseñado para ser alentador, no estresante
 
-### Educational Benefits
-✅ **Mental Math Skills**: Rapid calculation practice  
-✅ **Number Sense**: Understanding relationships between numbers  
-✅ **Operation Fluency**: Mastery of +, -, ×, ÷  
-✅ **Mistake Learning**: Immediate correction and explanation  
-✅ **Progress Tracking**: Visual motivation through stars and ranks  
-✅ **Self-Paced**: Students control their learning speed
+### Beneficios Educativos
+✅ **Habilidades de cálculo mental**: Práctica de cálculo rápido
+✅ **Sentido numérico**: Comprensión de las relaciones entre números
+✅ **Fluidez en operaciones**: Dominio de +, -, ×, ÷
+✅ **Aprendizaje del error**: Corrección e explicación inmediata
+✅ **Seguimiento del progreso**: Motivación visual mediante estrellas y rangos
+✅ **Ritmo propio**: Los estudiantes controlan su velocidad de aprendizaje
 
-## 📥 Installation & System Requirements
+## 📥 Instalación y Requisitos del Sistema
 
-### Running the Game
-1. Download the executable file (.exe)
-2. Double-click to launch
-3. No installation required - runs directly
-4. Game saves progress automatically during session
+### Ejecutar el Juego
+1. Descarga el archivo ejecutable (.exe) desde los [Releases](https://github.com/TheNarratorVIMMXX/EduMath/releases)
+2. Haz doble clic para iniciar
+3. No requiere instalación — se ejecuta directamente
 
-### System Requirements
-- **OS**: Windows 10/11
-- **RAM**: 50MB minimum
-- **Display**: 1000x700 minimum resolution
-- **Audio**: Speakers or headphones recommended
-- **Storage**: ~30MB free space
+### Requisitos del Sistema
+- **Sistema operativo**: Windows 10/11
+- **RAM**: Mínimo 50 MB
+- **Pantalla**: Resolución mínima de 1000x700
+- **Audio**: Se recomiendan altavoces o auriculares
+- **Almacenamiento**: ~30 MB de espacio libre
 
-### Troubleshooting
-- **Won't Launch?** Right-click → Run as Administrator
-- **No Sound?** Check volume mixer and system audio
-- **Blurry Display?** Ensure screen resolution is at least 1000x700
-- **Crashes?** Restart and try again; contact developer if persistent
+### Solución de Problemas
+- **¿No inicia?** Clic derecho → Ejecutar como administrador
+- **¿Sin sonido?** Revisa el mezclador de volumen y el audio del sistema
+- **¿Pantalla borrosa?** Asegúrate de que la resolución sea al menos 1000x700
+- **¿Se cierra inesperadamente?** Reinicia e intenta de nuevo; contacta al desarrollador si persiste
 
-## 🌐 Language Note
+## 🌐 Nota sobre el Idioma
 
-Currently, the game interface is in **Spanish** as it was developed for Spanish-speaking students. The math operations are universal, but feedback messages and instructions appear in Spanish.
+Actualmente, la interfaz del juego está en **español**. Las operaciones matemáticas son universales, pero los mensajes de retroalimentación e instrucciones aparecen en español.
 
-## 🔮 Coming Soon
+## 🔮 Próximamente
 
-Future updates may include:
-- Multiple language support (English, French, etc.)
-- Difficulty customization within grades
-- Timed challenge mode
-- Two-player competition mode
-- Extended question sets (20, 50 questions)
-- Sound toggle option
-- Progress save/load between sessions
-- Printable progress reports
+Las futuras actualizaciones podrían incluir:
+- Soporte para múltiples idiomas (inglés, francés, etc.)
+- Personalización de dificultad dentro de cada grado
+- Modo de desafío contrarreloj
+- Modo de competición para dos jugadores
+- Conjuntos de preguntas ampliados (20, 50 preguntas)
+- Opción para activar/desactivar el sonido
+- Guardado y carga de progreso entre sesiones
+- Reportes de progreso imprimibles
 
-## 📧 Support & Feedback
+## 📧 Soporte y Comentarios
 
-**Developer:** Carlos Gabriel Magallanes López  
-**Email:** cgmagallanes23@gmail.com
+**Desarrollador:** Carlos Gabriel Magallanes López
+**Correo electrónico:** cgmagallanes23@gmail.com
 
-Found a bug? Have a suggestion? Want to share your high score? Feel free to reach out!
+¿Encontraste un error? ¿Tienes una sugerencia? ¿Quieres compartir tu puntuación más alta? ¡No dudes en escribirme!
 
-## 📄 License & Credits
+## 📄 Licencia y Créditos
 
-**License:** Proprietary - Strictly for personal and educational use only  
-**Copyright:** © 2025 Carlos Gabriel Magallanes López - All Rights Reserved
+**Licencia:** Propietaria - Estrictamente para uso personal y educativo
+**Copyright:** © 2025 Carlos Gabriel Magallanes López - Todos los derechos reservados
 
-⚠️ **Important:** This software is proprietary. You may download and use the executable for personal/educational purposes only. Redistribution, modification, reverse engineering, or commercial use is strictly prohibited without written permission.
+⚠️ **Importante:** Este software es propietario. Puedes descargar y usar el ejecutable únicamente con fines personales o educativos. La redistribución, modificación, ingeniería inversa o uso comercial están estrictamente prohibidos sin autorización escrita.
 
-For licensing inquiries or commercial use: cgmagallanes23@gmail.com
+Para consultas de licencia o uso comercial: cgmagallanes23@gmail.com
 
-**Credits:** Developed with Python Arcade library  
-**Purpose:** Mathematics education for elementary students
+**Créditos:** Desarrollado con la biblioteca Python Arcade
+**Propósito:** Educación matemática para estudiantes de primaria
 
-📋 See [LICENSE](LICENSE) file for full terms and conditions.
+📋 Consulta el archivo [LICENSE](LICENSE) para los términos y condiciones completos.
 
 ---
 
-### 🌟 Download Space Math Adventure and start your journey to becoming a master astronaut mathematician! 🚀
+### 🌟 ¡Descarga EduMath y comienza tu camino para convertirte en un maestro astronauta matemático! 🚀
 
-**Perfect for:**
-- Elementary students (grades 1-6)
-- Homeschooling parents
-- Classroom teachers
-- Math tutors
-- After-school programs
+**Ideal para:**
+- Estudiantes de primaria (1° a 6° grado)
+- Padres que educan en casa
+- Maestros de aula
+- Tutores de matemáticas
+- Programas extraescolares
 
-**Make math practice an adventure, not a chore!** ⭐
+**¡Convierte a las matemáticas en una aventura!** ⭐
