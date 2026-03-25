@@ -1,0 +1,799 @@
+/*****************************************************************************************************************************************************************************/
+/*                                                                                                                                                                           */
+/*                                                                  Estilos para el Proyecto GeoFrame                                                                        */
+/*                                                                                                                                                                           */
+/*****************************************************************************************************************************************************************************/
+/*                                                                                                                                                                           */
+/* Autor: Magallanes López Carlos Gabriel                                                                                                                                    */
+/* Versión del Proyecto: 1.0                                                                                                                                                 */
+/* Correo: cgmagallanes23@gmail.com                                                                                                                                          */
+/* Ultima Modificación: 23/03/2025                                                                                                                                           */
+/*                                                                                                                                                                           */
+/*****************************************************************************************************************************************************************************/
+
+
+/* Propiedades Custom para HTML */
+:root {
+    
+    --sky:    #1a6bb5;
+    --sky2:   #0d4a8a;
+    --yellow: #ffd700;
+    --pink:   #ff6eb4;
+    --orange: #ff8c42;
+    --green:  #4cdf7a;
+    --purple: #a855f7;
+    --red:    #ff5252;
+    --blue:   #42a5f5;
+     --white:  #ffffff;
+            
+}
+
+/* Reset de Selector Global y sus PseudoElementos */
+*, *::before, *::after{margin: 0; padding: 0; box-sizing: border-box;}
+        
+/* Aplicamos el Comportamiento Suave del Scroll */
+html{scroll-behavior:smooth;}
+
+/* Aplicamos Estilo al Cuerpo del Documento */
+body{
+    
+    font-family: 'Nunito', sans-serif; 
+    background:var(--sky2); 
+    color:var(--white); 
+    overflow-x: hidden;                                                                                 /* Deshabilitamos el Scroll Horizontal */
+
+}
+
+/* PseudoElemento para las Estrellas de Fondo */
+body::before{
+            
+    content:'';
+    position: fixed;
+    inset: 0;                                                                                           /* Ocupa Todo el Viewport */                                                               
+    background-image:                                                                                   /* Imagen con Varios Gradientes Para Simular Estrellas Brillando */
+        radial-gradient(1px 1px at 10% 20%, white 0%, transparent 100%),
+        radial-gradient(1px 1px at 30% 50%, white 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 50% 10%, white 0%, transparent 100%),
+        radial-gradient(1px 1px at 70% 35%, white 0%, transparent 100%),
+        radial-gradient(1px 1px at 85% 65%, white 0%, transparent 100%),
+        radial-gradient(1px 1px at 15% 80%, white 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 60% 70%, white 0%, transparent 100%),
+        radial-gradient(1px 1px at 40% 90%, white 0%, transparent 100%),
+        radial-gradient(1px 1px at 92% 15%, white 0%, transparent 100%),
+        radial-gradient(1px 1px at 5% 45%, white 0%, transparent 100%),
+        radial-gradient(2px 2px at 25% 25%, rgba(255,255,255,0.7) 0%, transparent 100%),
+        radial-gradient(1px 1px at 75% 85%, rgba(255,255,255,0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 55% 40%, white 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 90% 50%, rgba(255,255,255,0.8) 0%, transparent 100%);
+    pointer-events: none;                                                                               /* Permite Interactuar con Elementos Debajo del PseudoElemento */
+    z-index: 0;                                                                                         /* Coloca las Estrellas Detrás del Contenido Principal */
+    animation: twinkle 4s ease-in-out infinite alternate;                                               /* Animación para Simular el Parpadeo de las Estrellas */
+        
+}
+        
+/* Animación para el Parpadeo de las Estrellas */
+@keyframes twinkle{from {opacity: 0.7;} to {opacity: 1;}}
+
+/* Aplicar Estilo a la Barra de Navegación */
+nav{
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;                                                                                       /* Asegura que la Barra de Navegación Esté Siempre Encima del Contenido */
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(13, 74, 138, 0.92);
+    backdrop-filter: blur(12px);                                                                        /* Desenfoque de Fondo para un Efecto de Vidrio Esmerilado */
+    border-bottom: 3px solid var(--yellow); 
+
+}
+
+
+/* Estilo para el Logo de la Barra de Navegación */
+.nav-logo{
+    
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.6rem;
+    color: var(--yellow);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+
+}
+
+/* Enlaces de Navegación */
+.nav-links{display: flex; gap: 24px; list-style: none;}
+
+/* Enlaces de Navegación del Documento */
+.nav-links a{
+    
+    font-weight: 800;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    transition: color .2s;                                                                              /* Transición Suave para el Cambio de Color en Hover */
+    letter-spacing: 0.5px;
+
+}
+
+/* Estado Hover para los Enlaces de Navegación */
+.nav-links a:hover{color:var(--yellow);}
+
+/* Sección Principal (Hero) */ 
+.hero{
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+    background: linear-gradient(160deg,#1565c0 0%,#0d47a1 40%,#1a237e 100%);
+
+}
+
+/* Planetas Flotantes en el Fondo del Hero */
+.hero-planets{
+    
+    position: absolute;
+    inset: 0;                                                                                           /* Ocupa Todo el Contenedor Hero */
+    pointer-events: none;                                                                               /* Permite Interactuar con Elementos del Hero sin Interferencia de los Planetas */
+    z-index: 0;                                                                                         /* Coloca los Planetas Detrás del Contenido Principal del Hero */
+
+}
+
+/* Estilos para los Planetas Flotantes */
+.planet{
+    
+    position: absolute; 
+    border-radius: 50%; 
+    animation: float 6s ease-in-out infinite;                                                           /* Animación de Flotación para Simular Movimiento Suave */
+
+}
+
+/* Planetas Específicos con Diferentes Tamaños, Colores y Posiciones */
+.p1{
+    
+    width: 80px; 
+    height: 80px;
+    background: radial-gradient(circle at 35% 35%,#ff80ab,#e91e63);
+    top: 15%;
+    right: 12%;
+    animation-delay:0s;
+
+}
+.p2{
+    
+    width: 55px; 
+    height: 55px;
+    background: radial-gradient(circle at 35% 35%,#a5d6a7,#2e7d32);
+    bottom: 25%;
+    left: 8%;
+    animation-delay:1.5s;
+}
+.p3{
+    
+    width: 65px; 
+    height: 65px;
+    background: radial-gradient(circle at 35% 35%,#ffcc80,#e65100);
+    top: 65%;
+    right: 6%;
+    animation-delay:3s;
+
+}
+.p4{
+
+    width: 40px; 
+    height: 40px;
+    background: radial-gradient(circle at 35% 35%,#ce93d8,#6a1b9a);
+    top: 30%;
+    left: 6%;
+    animation-delay:2s;
+
+}
+
+/* Animación de Flotación para Simular Movimiento Suave de los Planetas */
+@keyframes float{0%, 100%{transform: translateY(0);} 50% {transform: translateY(-18px);}}
+
+/* Contenedor Interno del Hero para el Texto y Botones */
+.hero-inner{
+    
+    position: relative;
+    z-index: 2;                                                                                         /* Asegura que el Contenido del Hero Esté Encima de los Planetas y Estrellas */
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;                                                                 /* Distribución en Dos Columnas para Texto y Captura de Pantalla */
+    gap: 60px;
+    align-items: center;
+
+}
+
+/* Insignia del Hero */
+.hero-badge{
+    
+    display: inline-flex;                                                                               /* Usamos Flexbox para Alinear el Icono y el Texto de la Insignia */
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,215,0,0.2);
+    border: 2px solid var(--yellow);
+    border-radius: 50px;
+    padding: 8px 18px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 0.8rem;
+    color: var(--yellow);
+    letter-spacing: 1px;
+    text-transform: uppercase;                                                                          /* Convertimos el Texto a Mayúsculas para un Estilo Más Impactante */
+    animation: popIn 0.6s ease forwards;                                                                /* Animación de Aparición para la Insignia del Hero */
+
+}
+
+/* Animación de Aparición para la Insignia del Hero */
+@keyframes popIn{from {opacity: 0; transform: scale(0.8);} to {opacity: 1; transform:scale(1);}}
+
+/* Título Principal del Hero */
+.hero-title{
+    
+    font-family: 'Fredoka One',cursive;
+    font-size: clamp(3rem,6vw,5rem);
+    line-height: 1.05;
+    margin-bottom: 16px;
+    animation: slideUp 0.8s ease 0.1s both;                                                             /* Animación de Deslizamiento para el Título del Hero con un Retraso para Sincronizar con la Insignia */          
+
+}
+
+/* Estilos para las Diferentes Partes del Título del Hero */
+.hero-title .t1{
+    
+    display: block;                                                                                     /* Cada Parte del Título se Muestra en una Nueva Línea para un Efecto Más Dramático */
+    color: var(--yellow);
+    text-shadow: 0 4px 20px rgba(255,215,0,0.4);
+
+}
+.hero-title .t2{
+    
+    display: block;                                                                                     /* Cada Parte del Título se Muestra en una Nueva Línea para un Efecto Más Dramático */
+    color: var(--pink); 
+    text-shadow: 0 4px 20px rgba(255,110,180,0.4);
+
+}
+.hero-title .t3{
+    
+    display: block;                                                                                     /* Cada Parte del Título se Muestra en una Nueva Línea para un Efecto Más Dramático */
+    font-size: 0.55em;
+    color: white;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 900;
+    margin-top: 6px;
+
+}
+
+/* Animación de Deslizamiento para el Título del Hero */
+@keyframes slideUp{
+    
+    from {opacity: 0; transform: translateY(24px);} to {opacity: 1; transform: translateY(0);}
+
+}
+
+/* Descripción del Hero */
+.hero-desc{
+    
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.8;
+    margin-bottom: 32px;
+    max-width: 460px;
+    animation: slideUp 0.8s ease 0.2s both;                                                              /* Animación de Deslizamiento para la Descripción del Hero con un Retraso para Sincronizar con el Título */
+    font-weight: 600;
+
+}
+
+/* Botones del Hero */
+.hero-btns{
+    
+    display: flex; 
+    gap: 14px;
+    flex-wrap: wrap;                                                                                    /* Permite que los Botones se Ajusten a la Siguiente Línea en Pantallas Más Pequeñas */
+    animation: slideUp 0.8s ease 0.3s both;                                                             /* Animación de Deslizamiento para los Botones del Hero con un Retraso para Sincronizar con la Descripción */
+
+}
+
+.btn-big{
+    
+    display: inline-flex;                                                                               /* Usamos Flexbox para Alinear el Icono y el Texto del Botón */
+    align-items: center;
+    gap: 10px;
+    padding: 16px 36px;
+    border-radius: 50px;
+    font-family: 'Fredoka One',cursive;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s;                                                                               /* Transición Suave para Todos los Cambios de Estilo en Hover */
+    border: none;
+    cursor: pointer;                                                                                    /* Curso de Puntero para Indicar que el Elemento es Interactivo */
+
+} 
+
+/* Botón Principal del Hero con Fondo Amarillo y su Estado Hover */
+.btn-yellow{background: var(--yellow); color: #1a237e; box-shadow: 0 6px 24px rgba(255,215,0,0.4);}   /* Botón Principal del Hero con Fondo Amarillo y su Estado Hover */
+.btn-yellow:hover{transform: translateY(-4px) scale(1.03); box-shadow: 0 10px 35px rgba(255,215,0,0.6);}/* Estado Hover para el Botón Principal del Hero con un Efecto de Elevación y Aumento de Brillo */   
+
+/* Outline Button del Hero con Fondo Transparente y su Estado Hover */
+.btn-outline{background: transparent; color: white; border: 3px solid white; box-shadow: none;}         /* Outline Button del Hero con Fondo Transparente y su Estado Hover */  
+.btn-outline:hover{background: white; color: #1a237e; transform: translateY(-4px);}                     /* Estado Hover para el Outline Button del Hero con Cambio de Fondo y Color de Texto */
+
+/* Contenedor para las Capturas de Pantalla del Hero */
+.hero-screens{position: relative; animation: slideUp 1s ease 0.4s both;}
+
+/* Contenedor para Apilar las Capturas de Pantalla del Hero */
+.screen-stack{position: relative;}
+
+/* Estilo para la Captura de Pantalla Principal del Hero */
+.screen-main{
+    
+    background: rgba(255,255,255,0.1); 
+    border: 3px solid rgba(255,255,255,0.25); 
+    border-radius: 20px;
+    overflow: hidden; 
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    
+    
+}
+
+/* Estilo para la Imagen de la Captura de Pantalla Principal del Hero */
+.screen-main img{
+    
+    width: 100%;
+    display: block;                                                                                     /* Elimina el Espacio Inferior que Aparece por Defecto en Imágenes en Línea */
+    border-radius: 17px;
+
+}
+
+
+/* Estilos para las Capturas de Pantalla Flotantes en el Hero */
+.screen-float{
+    
+    position: absolute; 
+    width: 48%; 
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+
+}
+
+
+/* Estilo para las Imágenes de las Capturas de Pantalla Flotantes en el Hero */
+.screen-float img{
+    
+    width: 100%; 
+    display: block;                                                                                     /* Elimina el Espacio Inferior que Aparece por Defecto en Imágenes en Línea */
+
+}
+
+/* Posiciones Específicas para las Capturas de Pantalla Flotantes en el Hero */
+.sf1{bottom: -20px; right: -20px;}                                                                      /* Captura de Pantalla Flotante 1 en la Esquina Inferior Derecha del Hero */
+.sf2{top: -20px; left: -20px;}                                                                          /* Captura de Pantalla Flotante 2 en la Esquina Superior Izquierda del Hero */                                      
+
+
+/* Estilo para las Secciones del Documento */
+section{
+    
+    padding: 90px 0;
+    position: relative;
+    z-index: 1;                                                                                         /* Asegura que el Contenido de las Secciones Esté Encima de los Planetas y Estrellas del Fondo */
+
+}
+
+
+/* Contenedor Interno para el Contenido de las Secciones del Documento */
+.container{max-width: 1150px; margin: 0 auto; padding: 0 40px;}
+
+/* Etiqueta para las Secciones del Documento */
+.sec-tag{
+    
+    display: inline-block;                                                                              /* Permitir que se Ajuste al Contenido y Mantenga su Propiedad de Bloque para el Padding y Border */
+    background: rgba(255,215,0,0.2);
+    border: 2px solid var(--yellow);
+    border-radius: 50px;
+    padding: 6px 18px;
+    font-weight: 900;
+    font-size: 0.75rem;
+    color: var(--yellow);
+    letter-spacing: 2px;
+    text-transform: uppercase;                                                                          /* Convertimos el Texto a Mayúsculas para un Estilo Más Impactante */
+    margin-bottom: 16px;
+
+}
+
+/* Título de las Secciones del Documento */
+.sec-title{
+    
+    font-family: 'Fredoka One',cursive;
+    font-size: clamp(2.2rem,4vw,3.2rem);
+    margin-bottom: 14px;
+    line-height: 1.1;
+
+}
+
+/* Estilo para las Partes del Título de las Secciones del Documento */
+.sec-title span{color:var(--yellow);}
+
+/* Subtítulo o Descripción de las Secciones del Documento */
+.sec-sub{
+    
+    font-size: 1rem; 
+    color: rgba(255,255,255,0.75);
+    line-height: 1.75;
+    max-width: 560px;
+    font-weight: 600;
+
+}
+
+/* Sección de Grados */
+.grades-section{background: linear-gradient(180deg, #0d47a1 0%, #1565c0 100%);}
+
+/* Cuadrícula para las Tarjetas de Grados */
+.grades-grid{display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 50px;}
+
+/* Carta para Cada Grado con Estilo de Tarjeta */
+.grade-card{
+    
+    border-radius: 24px;                                                                                
+    padding: 32px 24px;
+    text-align: center;
+    transition: all 0.3s;                                                                               /* Transición Suave para Todos los Cambios de Estilo en Hover */
+    cursor: default;                                                                                    /* Cursor por Defecto para Indicar que la Tarjeta no es Interactiva */
+    position: relative;
+    overflow: hidden;
+    border: 3px solid rgba(255,255,255,0.15);
+
+}
+
+/* PseudoElemento para el Brillo Sutil en las Tarjetas de Grados */
+.grade-card::before{
+    
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+
+}
+
+/* Estado Hover para las Tarjetas de Grados */
+.grade-card:hover{
+    
+    transform: translateY(-8px) scale(1.02);                                                            /* Efecto de Elevación y Aumento de Tamaño para Destacar la Tarjeta al Pasar el Ratón por Encima */
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.3);
+    
+}
+
+/* Fondos con Gradientes para Cada Grado */
+.gc1{background:linear-gradient(135deg,#e53935,#b71c1c);}                                           /* Grado 1 (Rojo) */
+.gc2{background:linear-gradient(135deg,#f57c00,#e65100);}                                           /* Grado 2 (Naranja) */
+.gc3{background:linear-gradient(135deg,#f9a825,#f57f17);}                                           /* Grado 3 (Amarillo) */
+.gc4{background:linear-gradient(135deg,#2e7d32,#1b5e20);}                                           /* Grado 4 (Verde) */
+.gc5{background:linear-gradient(135deg,#1565c0,#0d47a1);}                                           /* Grado 5 (Azul) */
+.gc6{background:linear-gradient(135deg,#6a1b9a,#4a148c);}                                           /* Grado 6 (Morado) */
+
+/* Emoji para Representar Cada Grado */
+.grade-emoji{
+    
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+    display: block;                                                                                     /* El Emoji se Muestra como un Elemento de Bloque para que el Texto Aparezca Debajo de Él */
+    animation: wobble 3s ease-in-out infinite;                                                          /* Animación de Oscilación para Dar Vida a los Emojis de los Grados */
+
+}
+
+/* Animación de Oscilación para Dar Vida a los Emojis de los Grados */
+@keyframes wobble{
+    
+    0%, 100% {transform: rotate(0deg);} 25% {transform: rotate(-8deg);} 75% {transform: rotate(8deg);}
+
+}
+
+/* Nombre del Grado */
+.grade-name{font-family: 'Fredoka One', cursive; font-size: 1.5rem; margin-bottom: 8px;}
+
+/* Operaciones o Temas Principales del Grado */
+.grade-ops{font-size: 0.85rem; color: rgba(255,255,255,0.85); margin-bottom: 10px; font-weight: 600;}   
+
+/* Ejemplo de Problema o Concepto para Cada Grado */
+.grade-example{
+    
+    background: rgba(0,0,0,0.2);
+    border-radius: 12px;
+    padding: 8px 14px;
+    font-family: 'Fredoka One',cursive;
+    font-size: 1rem;
+    color: var(--yellow);
+
+}
+
+/* Sección de Cómo Jugar */
+.howto-section{background: linear-gradient(180deg, #1565c0 0%, #0d47a1 100%);}
+
+/* Cuadrícula para las Tarjetas de Pasos */
+.steps-grid{display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; margin-top: 50px;}
+
+/* Carta para Cada Paso con Estilo de Tarjeta */
+.step-card{
+    
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 28px 20px;
+    text-align: center;
+    transition: all 0.3s;                                                                               /* Transición Suave para Todos los Cambios de Estilo en Hover */    
+
+}
+
+/* Estado Hover para las Tarjetas de Pasos */
+.step-card:hover{background: rgba(255,255,255,0.18); transform: translateY(-6px);}
+
+/* Paso circular */
+.step-circle{
+    
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-family: 'Fredoka One',cursive;
+    font-size: 1.5rem;
+    color: #1a237e;
+    box-shadow: 0 4px 16px rgba(255,215,0,0.4);
+
+}
+
+/* Icono para Representar Cada Paso */
+.step-icon{
+    
+    font-size: 2rem; 
+    margin-bottom: 12px; 
+    display: block;                                                                                     /* El Icono se Muestra como un Elemento de Bloque para que el Texto Aparezca Debajo de Él */
+
+}       
+
+/* Título del Paso */
+.step-title{
+    
+    font-family: 'Fredoka One', cursive; 
+    font-size: 1.1rem; 
+    margin-bottom: 8px; 
+    color: var(--yellow);
+
+}
+
+/* Descripción del Paso */
+.step-desc{font-size: 0.87rem; color: rgba(255,255,255,0.8); line-height: 1.65; font-weight: 600;}
+
+/* Sección de Capturas de Pantalla */
+.screens-section{background: linear-gradient(180deg, #0d47a1 0%, #1a237e 100%);}
+
+/* Cuadrícula para las Tarjetas de Capturas de Pantalla */
+.screens-grid{display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 50px;}
+
+.ss-card{
+    
+    background: rgba(255,255,255,0.08); 
+    border: 2px solid rgba(255,255,255,0.15);
+    border-radius:16px;
+    overflow: hidden;
+    transition: all .4s;                                                                                /* Transición Suave para Todos los Cambios de Estilo en Hover */
+
+}
+
+/* Estado Hover para las Tarjetas de Capturas de Pantalla */
+.ss-card:hover{
+    
+    transform: scale(1.04);
+    border-color: var(--yellow);
+    box-shadow: 0 16px 50px rgba(255, 215, 0, 0.2);
+
+}
+
+/* Estilo para las Imágenes dentro de las Tarjetas de Capturas de Pantalla */
+.ss-card img{
+    
+    width: 100%;
+    display: block;                                                                                     /* Elimina el Espacio Inferior que Aparece por Defecto en Imágenes en Línea */
+
+}
+
+/* Pestaña para las Capturas de Pantalla */
+.ss-label{
+    
+    padding: 12px 16px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.8);
+
+}
+
+/* Sección de Rangos o Logros */
+.ranks-section{background: linear-gradient(180deg, #1a237e 0%, #0d47a1 100%);} 
+
+/* Cuadrícula para las Tarjetas de Rangos o Logros */
+.ranks-grid{display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; margin-top: 50px;}
+
+/* Carta para Cada Rango o Logro con Estilo de Tarjeta */
+.rank-card{
+    
+    border-radius: 20px;
+    padding: 28px; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid rgba(255,255,255,0.15);
+    transition: all 0.3s;                                                                               /* Transición Suave para Todos los Cambios de Estilo en Hover */
+
+}
+
+/* Estado Hover para las Tarjetas de Rangos o Logros */
+.rank-card:hover{transform: translateX(8px); border-color: rgba(255, 255, 255, 0.35);}
+
+/* Fondos con Gradientes para Cada Rango o Logro */
+.rk1{background: linear-gradient(135deg, rgba(255, 215, 0, 0.25),rgba(255, 152, 0, 0.15));}         /* Rango 1 (Amarillo) */
+.rk2{background: linear-gradient(135deg, rgba(76, 223, 122, 0.2),rgba(46, 125, 50, 0.15));}         /* Rango 2 (Verde) */
+.rk3{background: linear-gradient(135deg, rgba(66, 165, 245, 0.2),rgba(21, 101, 192, 0.15));}        /* Rango 3 (Azul) */
+.rk4{background: linear-gradient(135deg, rgba(255, 82, 82, 0.2),rgba(183, 28, 28, 0.15));}          /* Rango 4 (Rojo) */
+
+/* Emoji para Representar Cada Rango o Logro */
+.rank-emoji{
+    
+    font-size: 3rem;
+    flex-shrink: 0;                                                                                     /* Evita Reducción de Tamaño para Ajustarse al Contenido de la Tarjeta, Manteniendo su Tamaño Consistente */
+
+}
+
+/* Título del Rango o Logro */
+.rank-pct{
+    
+    font-family: 'Fredoka One', cursive; 
+    font-size: 1.4rem;
+    color: var(--yellow);
+    margin-bottom: 4px;
+
+}
+
+/* Nombre del Rango o Logro */
+.rank-name{font-family: 'Fredoka One', cursive; font-size: 1.15rem; margin-bottom: 6px;}
+
+/* Mensaje del Rango o Logro */
+.rank-msg{font-size: 0.85rem; color: rgba(255,255,255,0.75); font-weight: 600;}
+
+/* Sección de Descarga o Llamado a la Acción */
+.dl-section{
+    
+    background: linear-gradient(135deg, #0d47a1 0%, #1a237e 50%, #1b0050 100%);
+    text-align: center;
+    padding: 100px 40px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* PseudoElemento para el Icono de Fondo en la Sección de Descarga o Llamado a la Acción */
+.dl-section::before{
+    
+    content: '🚀';
+    position: absolute;
+    font-size: 18rem;
+    opacity: 0.04;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);                                                                    /* Centra el Icono Exactamente en el Medio de la Sección */
+    pointer-events: none;                                                                               /* Permite Interactuar con los Elementos de la Sección sin Interferencia del Icono de Fondo */
+
+}
+
+/* Estilo para el Título de la Sección de Descarga o Llamado a la Acción */
+.dl-section .sec-title{text-align:center;}
+
+/* Estilo para el Subtítulo o Descripción de la Sección de Descarga o Llamado a la Acción */
+.dl-section p{
+    
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.8);
+    max-width: 500px;
+    margin: 0 auto 40px;
+    line-height: 1.75;
+    font-weight: 600;
+
+}
+
+/* Botón de Descarga o Llamado a la Acción con Estilo Destacado y su Estado Hover */
+.dl-btn{
+    
+    display: inline-flex;                                                                               /* Usamos Flexbox para Alinear el Icono y el Texto del Botón de Descarga o Llamado a la Acción */
+    align-items: center;
+    gap: 12px;
+    padding: 20px 56px;
+    background: var(--yellow);
+    color: #1a237e;
+    font-family: 'Fredoka One',cursive;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s;                                                                               /* Transición Suave para Todos los Cambios de Estilo en Hover */
+    box-shadow: 0 8px 32px rgba(255,215,0,0.4);
+
+}
+
+/* Botón de Descarga o Llamado a la Acción con Estilo Destacado y su Estado Hover */
+.dl-btn:hover{transform: translateY(-5px) scale(1.04); box-shadow: 0 16px 50px rgba(255,215,0,0.6);}
+
+/* Requisitos o Características Destacadas */
+.req-chips{display: flex; justify-content: center; gap:14px; flex-wrap: wrap; margin-top: 28px;}
+
+/* Estilo para Cada Requisito o Característica Destacada con un Diseño de Chip o Etiqueta */
+.req-chip{
+    
+    background:rgba(255, 255, 255, 0.12);                                                               
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 8px 18px;
+    font-size: 0.82rem;
+    font-weight: 800;
+
+}
+
+/* Color del Texto para Cada Requisito o Característica Destacada */
+.req-chip span{color:var(--yellow);}
+
+/* Pie de Página */
+footer{
+    
+    background: #0a1628; 
+    border-top: 3px solid var(--yellow); 
+    padding: 28px 40px; 
+    text-align: center;
+
+}
+
+/* Estilo para el Texto del Pie de Página */
+footer p{color: rgba(255, 255, 255, 0.5); font-size: 0.85rem; font-weight: 600;}
+
+/* Estilo para los Enlaces del Pie de Página */
+footer a{color: var(--yellow); text-decoration: none;}
+
+/* Animación de Aparición para Elementos al Hacer Scroll */
+.fade-in{opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease,transform 0.7s ease;}   /* Animación de Aparición al Hacer Scroll con un Efecto de Deslizamiento hacia Arriba y Desvanecimiento */
+.fade-in.visible{opacity: 1; transform: translateY(0);}                                                 /* Hacer Visible el Elemento */
+
+/* Responsive Design para Dispositivos Móviles */
+@media(max-width: 960px){
+
+    nav{padding: 14px 20px;}                                                                            /* Navegación: Reducir Padding */
+    .nav-links{display: none;}                                                                          /* Navegación: Ocultar Enlaces en Pantallas Pequeñas */
+    .container{padding: 0 20px;}                                                                        /* Contenedor Principal: Reducir Padding */
+    .hero-inner{grid-template-columns: 1fr; gap: 40px; text-align: center;}                             /* Hero: Cambiar a una Sola Columna y Centrar el Texto */                               
+    .hero-btns{justify-content: center;}                                                                /* Botones del Hero: Centrar Contenido */
+    .hero-desc{margin: 0 auto 32px;}                                                                    /* Descripción: Centrar y Ajustar Margen */
+    .grades-grid{grid-template-columns: repeat(2,1fr);}                                                 /* Cuadrícula de Grados: Cambiar a Dos Columnas */      
+    .steps-grid{grid-template-columns: repeat(2,1fr);}                                                  /* Cuadrícula de Pasos: Cambiar a Dos Columnas */
+    .screens-grid{grid-template-columns: 1fr;}                                                          /* Cuadrícula de Capturas de Pantalla: Cambiar a una Sola Columna */
+    .ranks-grid{grid-template-columns: 1fr;}                                                            /* Cuadrícula de Rangos o Logros: Cambiar a una Sola Columna */ 
+    .sf1,.sf2{display: none;}                                                                           /* Capturas de Pantalla Flotantes del Hero: Ocultar en Pantallas Pequeñas para Evitar Saturación Visual */ 
+    
+}
+
+/*****************************************************************************************************************************************************************************/
