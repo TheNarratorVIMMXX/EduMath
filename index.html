@@ -1,7 +1,7 @@
 <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!-- DOCUMENTACIÓN -->
 <!-- Vista para el EduMath -->
-<!-- Ultima Modificación: 24/03/2026 -->
+<!-- Ultima Modificación: 09/05/2026 -->
 <!-- Autor: Magallanes López Carlos Gabriel -->
 <!-- Correo: cgmagallanes23@gmail.com -->
 <!-- Versión: 1.0 -->
@@ -23,10 +23,10 @@
         <ul class="nav-links">                                                                                                                  <!-- Lista de Enlaces de Navegación -->
             
             <!-- Enlaces de Navegación -->
-            <li><a href="#grados">Grados</a></li>                                                                                         
-            <li><a href="#como-jugar">Cómo Jugar</a></li>
-            <li><a href="#capturas">Capturas</a></li>
-            <li><a href="#descargar">Descargar</a></li>
+            <li><a href="#grados" data-i18n="navGrades">Grados</a></li>                                                                                         
+            <li><a href="#como-jugar" data-i18n="navHowTo">Cómo Jugar</a></li>
+            <li><a href="#capturas" data-i18n="navScreenshots">Capturas</a></li>
+            <li><a href="#descargar" data-i18n="navDownload">Descargar</a></li>
         
         </ul>
     </nav>
@@ -42,24 +42,24 @@
         </div>
         <div class="hero-inner">                                                                                                                <!-- Contenido Interno de la Sección Principal -->
             <div>
-                <div class="hero-badge">🌟 Juego Educativo · 1° a 6° Grado</div>                                                                <!-- Badge de la Sección Principal -->
+                <div class="hero-badge" data-i18n="heroBadge">🌟 Juego Educativo · 1° a 6° Grado</div>                                         <!-- Badge de la Sección Principal -->
                 <h1 class="hero-title">                                                                                                         <!-- Título de la Sección Principal -->
                     
                     <!-- Partes del Título con Diferentes Colores para Resaltar -->
-                    <span class="t1">Aventura</span>
-                    <span class="t2">Matemática</span>
-                    <span class="t3">🚀 Espacial — EduMath</span>
+                    <span class="t1" data-i18n="heroT1">Aventura</span>
+                    <span class="t2" data-i18n="heroT2">Matemática</span>
+                    <span class="t3" data-i18n="heroT3">🚀 Espacial — EduMath</span>
 
                 </h1> 
-                <p class="hero-desc">                                                                                                           <!-- Descripción de la Sección Principal -->
+                <p class="hero-desc" data-i18n="heroDesc">                                                                                     <!-- Descripción de la Sección Principal -->
                     ¡Viaja por el cosmos resolviendo operaciones matemáticas! Gana estrellas ⭐, desbloquea rangos de astronauta y conviértete
                     en el mejor matemático del universo.
                 </p>
                 <div class="hero-btns">                                                                                                         <!-- Botones de la Sección Principal -->
                     
                     <!-- Botones -->
-                    <a href="#descargar" class="btn-big btn-yellow">⬇ ¡Jugar Gratis!</a>                                   
-                    <a href="#como-jugar" class="btn-big btn-outline">¿Cómo Jugar?</a>
+                    <a href="#descargar" class="btn-big btn-yellow" data-i18n="heroBtn1">¡Jugar Gratis!</a>                                   
+                    <a href="#como-jugar" class="btn-big btn-outline" data-i18n="heroBtn2">¿Cómo Jugar?</a>
                 
                 </div>
             </div>
@@ -78,47 +78,49 @@
     <section class="grades-section" id="grados">                                                                                                <!-- Sección de Grados -->
         <div class="container">                                                                                                                 <!-- Contenedor para el Contenido de la Sección -->
             <div class="fade-in">                                                                                                               <!-- Contenido con Efecto de Aparición -->
-                <span class="sec-tag">🎓 Niveles de Dificultad</span>                                                                           <!-- Etiqueta de la Sección -->
-                <h2 class="sec-title">¡Elige tu <span>Grado!</span></h2>                                                                        <!-- Título de la Sección -->
-                <p class="sec-sub">Cada grado tiene problemas diseñados especialmente para tu edad. ¡El juego crece contigo!</p>                <!-- Descripción de la Sección -->
+                <span class="sec-tag" data-i18n="gradesTag">🎓 Niveles de Dificultad</span>                                                    <!-- Etiqueta de la Sección -->
+                <h2 class="sec-title" data-i18n-html="gradesTitle">¡Elige tu <span>Grado!</span></h2>                                           <!-- Título de la Sección -->
+                <p class="sec-sub" data-i18n="gradesSub">                                                                                       <!-- Descripción de la Sección -->
+                    Cada grado tiene problemas diseñados especialmente para tu edad. ¡El juego crece contigo!
+                </p>                
             </div>
             <div class="grades-grid fade-in">                                                                                                   <!-- Grid para las Tarjetas de Grados -->
                 
                 <!-- Cartas de Grado con Emoji, Nombre, Operadores y Ejemplos -->
                 <div class="grade-card gc1">
                     <span class="grade-emoji">🔢</span>
-                    <p class="grade-name">1° Grado</p>
-                    <p class="grade-ops">Suma y Resta · Números 1-20</p>
+                    <p class="grade-name" data-i18n="grade1Name">1° Grado</p>
+                    <p class="grade-ops" data-i18n="grade1Ops">Suma y Resta · Números 1-20</p>
                     <div class="grade-example">8 + 5 = ???</div>
                 </div>
                 <div class="grade-card gc2">
                     <span class="grade-emoji">➕</span>
-                    <p class="grade-name">2° Grado</p>
-                    <p class="grade-ops">Suma y Resta · Números 10-50</p>
+                    <p class="grade-name" data-i18n="grade2Name">2° Grado</p>
+                    <p class="grade-ops" data-i18n="grade2Ops">Suma y Resta · Números 10-50</p>
                     <div class="grade-example">27 + 18 = ???</div>
                 </div>
                 <div class="grade-card gc3">
                     <span class="grade-emoji">✖️</span>
-                    <p class="grade-name">3° Grado</p>
-                    <p class="grade-ops">+ - × · Números 10-60</p>
+                    <p class="grade-name" data-i18n="grade3Name">3° Grado</p>
+                    <p class="grade-ops" data-i18n="grade3Ops">+ - × · Números 10-60</p>
                     <div class="grade-example">7 × 8 = ???</div>
                 </div>
                 <div class="grade-card gc4">
                     <span class="grade-emoji">➗</span>
-                    <p class="grade-name">4° Grado</p>
-                    <p class="grade-ops">+ - × ÷ · Números 20-100</p>
+                    <p class="grade-name" data-i18n="grade4Name">4° Grado</p>
+                    <p class="grade-ops" data-i18n="grade4Ops">+ - × ÷ · Números 20-100</p>
                     <div class="grade-example">48 ÷ 6 = ???</div>
                 </div>
                 <div class="grade-card gc5">
                     <span class="grade-emoji">🧮</span>
-                    <p class="grade-name">5° Grado</p>
-                    <p class="grade-ops">Cuatro operaciones · 100-500</p>
+                    <p class="grade-name" data-i18n="grade5Name">5° Grado</p>
+                    <p class="grade-ops" data-i18n="grade5Ops">Cuatro operaciones · 100-500</p>
                     <div class="grade-example">384 + 127 = ???</div>
                 </div>
                 <div class="grade-card gc6">
                     <span class="grade-emoji">🏆</span>
-                    <p class="grade-name">6° Grado</p>
-                    <p class="grade-ops">Cuatro operaciones · 500-1500</p>
+                    <p class="grade-name" data-i18n="grade6Name">6° Grado</p>
+                    <p class="grade-ops" data-i18n="grade6Ops">Cuatro operaciones · 500-1500</p>
                     <div class="grade-example">875 - 392 = ???</div>
                 </div>
             
@@ -128,9 +130,9 @@
     <section class="howto-section" id="como-jugar">                                                                                             <!-- Sección de Instrucciones -->
         <div class="container">                                                                                                                 <!-- Contenedor para el Contenido de la Sección -->
             <div class="fade-in">                                                                                                               <!-- Elmento con Efecto de Aparición -->
-                <span class="sec-tag">🎮 Instrucciones</span>                                                     
-                <h2 class="sec-title">¿Cómo <span>Jugar</span>?</h2>                                                          
-                <p class="sec-sub">¡Súper fácil! En menos de un minuto ya estás resolviendo problemas espaciales.</p>
+                <span class="sec-tag" data-i18n="howtoTag">🎮 Instrucciones</span>                                                     
+                <h2 class="sec-title" data-i18n-html="howtoTitle">¿Cómo <span>Jugar</span>?</h2>                                                          
+                <p class="sec-sub" data-i18n="howtoSub">¡Súper fácil! En menos de un minuto ya estás resolviendo problemas espaciales.</p>
             </div>
 
             <!-- Cuadrícula de Pasos, con Carta de Paso, Número, Icono, Títulos y Descripción-->
@@ -138,33 +140,33 @@
                 <div class="step-card">
                     <div class="step-circle">1</div>
                     <span class="step-icon">🚀</span>
-                    <p class="step-title">Abre el Juego</p>
-                    <p class="step-desc">Haz doble clic en EduMath.exe. Espera la pantalla de bienvenida animada y presiona <strong>ENTER</strong>.</p>
+                    <p class="step-title" data-i18n="step1Title">Abre el Juego</p>
+                    <p class="step-desc" data-i18n="step1Desc">Haz doble clic en EduMath.exe. Espera la pantalla de bienvenida animada y presiona <strong>ENTER</strong>.</p>
                 </div>
                 <div class="step-card">
                     <div class="step-circle">2</div>
                     <span class="step-icon">🎓</span>
-                    <p class="step-title">Elige tu Grado</p>
-                    <p class="step-desc">Haz clic en tu grado escolar. ¡Hay 6 niveles de dificultad, del 1° al 6° grado!</p>
+                    <p class="step-title" data-i18n="step2Title">Elige tu Grado</p>
+                    <p class="step-desc" data-i18n="step2Desc">Haz clic en tu grado escolar. ¡Hay 6 niveles de dificultad, del 1° al 6° grado!</p>
                 </div>
                 <div class="step-card">
                     <div class="step-circle">3</div>
                     <span class="step-icon">🧮</span>
-                    <p class="step-title">¡Resuelve!</p>
-                    <p class="step-desc">Escribe tu respuesta con el teclado y presiona <strong>ENTER</strong>. ¡10 preguntas por ronda!</p>
+                    <p class="step-title" data-i18n="step3Title">¡Resuelve!</p>
+                    <p class="step-desc" data-i18n="step3Desc">Escribe tu respuesta con el teclado y presiona <strong>ENTER</strong>. ¡10 preguntas por ronda!</p>
                 </div>
                 <div class="step-card">
                     <div class="step-circle">4</div>
                     <span class="step-icon">⭐</span>
-                    <p class="step-title">Gana Estrellas</p>
-                    <p class="step-desc">Cada respuesta correcta te da una estrella ⭐. ¡Acumula estrellas y sube de rango astronauta!</p>
+                    <p class="step-title" data-i18n="step4Title">Gana Estrellas</p>
+                    <p class="step-desc" data-i18n="step4Desc">Cada respuesta correcta te da una estrella ⭐. ¡Acumula estrellas y sube de rango astronauta!</p>
                 </div>
             </div>
 
             <!-- Controles del Juego -->
             <div class="fade-in" style="margin-top:40px;">                                                                                      <!-- Contenedor de los Controles -->
-                <div style="background:rgba(255,255,255,0.1);border:2px solid rgba(255,255,255,0.2);border-radius:20px;padding:28px 32px;"> <!-- Carta de Control -->
-                    <h3 style="font-family:'Fredoka One',cursive;font-size:1.4rem;color:var(--yellow);margin-bottom:20px;text-align:center;">   <!-- Título de los Controles -->
+                <div style="background:rgba(255,255,255,0.1);border:2px solid rgba(255,255,255,0.2);border-radius:20px;padding:28px 32px;">     <!-- Carta de Control -->
+                    <h3 data-i18n="controlsTitle" style="font-family:'Fredoka One',cursive;font-size:1.4rem;color:var(--yellow);margin-bottom:20px;text-align:center;">   <!-- Título de los Controles -->
                         ⌨️ Controles del Juego
                     </h3>
 
@@ -172,18 +174,18 @@
                     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">                                                    
                         <div style="background:rgba(0,0,0,0.2);border-radius:14px;padding:16px;text-align:center;">                         
                             <div style="font-size:1.6rem;margin-bottom:8px;">🔢</div>
-                            <p style="font-weight:900;font-size:0.9rem;color:var(--yellow);">Teclas 0-9</p>
-                            <p style="font-size:0.8rem;color:rgba(255,255,255,0.75);font-weight:600;">Escribir respuesta</p>
+                            <p style="font-weight:900;font-size:0.9rem;color:var(--yellow);" data-i18n="ctrl1Label">Teclas 0-9</p>
+                            <p style="font-size:0.8rem;color:rgba(255,255,255,0.75);font-weight:600;" data-i18n="ctrl1Desc">Escribir respuesta</p>
                         </div>
                         <div style="background:rgba(0,0,0,0.2);border-radius:14px;padding:16px;text-align:center;">
                             <div style="font-size:1.6rem;margin-bottom:8px;">⏎</div>
-                            <p style="font-weight:900;font-size:0.9rem;color:var(--yellow);">Enter</p>
-                            <p style="font-size:0.8rem;color:rgba(255,255,255,0.75);font-weight:600;">Enviar respuesta</p>
+                            <p style="font-weight:900;font-size:0.9rem;color:var(--yellow);" data-i18n="ctrl2Label">Enter</p>
+                            <p style="font-size:0.8rem;color:rgba(255,255,255,0.75);font-weight:600;" data-i18n="ctrl2Desc">Enviar respuesta</p>
                         </div>
                         <div style="background:rgba(0,0,0,0.2);border-radius:14px;padding:16px;text-align:center;">
-                            <div style="font-size:1.6rem;margin-bottom:8px;">⌫</div>
+                            <div style="font-size:1.6rem;margin-bottom:8px;" data-i18n="ctrl3Label">⌫</div>
                             <p style="font-weight:900;font-size:0.9rem;color:var(--yellow);">Backspace</p>
-                            <p style="font-size:0.8rem;color:rgba(255,255,255,0.75);font-weight:600;">Borrar dígito</p>
+                            <p style="font-size:0.8rem;color:rgba(255,255,255,0.75);font-weight:600;" data-i18n="ctrl3Desc">Borrar dígito</p>
                         </div>
                     </div>
                 
@@ -196,38 +198,38 @@
     <section class="screens-section" id="capturas">
         <div class="container">
             <div class="fade-in">
-                <span class="sec-tag">📸 Vista Previa</span>
-                <h2 class="sec-title">Así se <span>Ve el Juego</span></h2>
+                <span class="sec-tag" data-i18n="screensTag">📸 Vista Previa</span>
+                <h2 class="sec-title" data-i18n-html="screensTitle">Así se <span>Ve el Juego</span></h2>
             </div>
             <div class="screens-grid fade-in">
                 <div class="ss-card">
                     <img src="imgs/cover.png" alt="Pantalla de introducción">
-                    <div class="ss-label">🌟 Pantalla de Bienvenida</div>
+                    <div class="ss-label" data-i18n="ss1Label">🌟 Pantalla de Bienvenida</div>
                 </div>
                 <div class="ss-card">
                     <img src="imgs/main_menu.png" alt="Menú de selección">
-                    <div class="ss-label">🎓 Selección de Grado</div>
+                    <div class="ss-label" data-i18n="ss2Label">🎓 Selección de Grado</div>
                 </div>
                 <div class="ss-card">
                     <img src="imgs/correct.png" alt="Respuesta correcta">
-                    <div class="ss-label">✅ ¡Respuesta Correcta!</div>
+                    <div class="ss-label" data-i18n="ss3Label">✅ ¡Respuesta Correcta!</div>
                 </div>
                 <div class="ss-card">
                     <img src="imgs/incorrect.png" alt="Respuesta incorrecta">
-                    <div class="ss-label">❌ Respuesta Incorrecta</div>
+                    <div class="ss-label" data-i18n="ss4Label">❌ Respuesta Incorrecta</div>
                 </div>
                 <div class="ss-card">
                     <img src="imgs/calif.png" alt="Pantalla de resultados">
-                    <div class="ss-label">🏆 Pantalla de Resultados</div>
+                    <div class="ss-label" data-i18n="ss5Label">🏆 Pantalla de Resultados</div>
                 </div>
 
                 <!-- Carta de Robot -->
                 <div class="ss-card" style="background:rgba(255,255,255,0.05);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:200px;gap:12px;">
                     <div style="font-size:4rem;">🤖</div>
-                    <p style="font-family:'Fredoka One',cursive;font-size:1.2rem;color:var(--yellow);text-align:center;">                       <!-- Título de Tarjeta-->
+                    <p style="font-family:'Fredoka One',cursive;font-size:1.2rem;color:var(--yellow);text-align:center;" data-i18n="robotTitle">                       <!-- Título de Tarjeta-->
                         ¡Tu Robot Guía<br>te acompaña siempre!
                     </p>
-                    <p style="font-size:0.82rem;color:rgba(255,255,255,0.65);text-align:center;font-weight:600;">                             <!-- Descripción-->
+                    <p style="font-size:0.82rem;color:rgba(255,255,255,0.65);text-align:center;font-weight:600;" data-i18n="robotDesc">                               <!-- Descripción-->
                         Se pone feliz 😄 cuando aciertas<br>y triste 😢 cuando te equivocas
                     </p>
                 </div>
@@ -239,41 +241,41 @@
     <section class="ranks-section" id="rangos">
         <div class="container">
             <div class="fade-in">
-                <span class="sec-tag">🏆 Sistema de Logros</span>
-                <h2 class="sec-title">¿Qué <span>Rango</span> obtienes?</h2>
-                <p class="sec-sub">Según tu desempeño en cada ronda, recibirás un título especial de astronauta.</p>
+                <span class="sec-tag" data-i18n="ranksTag">🏆 Sistema de Logros</span>
+                <h2 class="sec-title" data-i18n-html="ranksTitle">¿Qué <span>Rango</span> obtienes?</h2>
+                <p class="sec-sub" data-i18n="ranksSub">Según tu desempeño en cada ronda, recibirás un título especial de astronauta.</p>
             </div>
             <div class="ranks-grid fade-in">
                 <div class="rank-card rk1">
                     <div class="rank-emoji">🚀</div>
                     <div>
-                        <p class="rank-pct">90% — 100%</p>
-                        <p class="rank-name">Astronauta Experto</p>
-                        <p class="rank-msg">¡ASTRONAUTA EXPERTO! — El mejor del universo 🌟</p>
+                        <p class="rank-pct" data-i18n="rank1Pct">90% — 100%</p>
+                        <p class="rank-name" data-i18n="rank1Name">Astronauta Experto</p>
+                        <p class="rank-msg" data-i18n="rank1Msg">¡ASTRONAUTA EXPERTO! — El mejor del universo 🌟</p>
                     </div>
                 </div>
                 <div class="rank-card rk2">
                     <div class="rank-emoji">🌟</div>
                     <div>
-                        <p class="rank-pct">70% — 89%</p>
-                        <p class="rank-name">Explorador Espacial</p>
-                        <p class="rank-msg">¡EXPLORADOR ESPACIAL! — ¡Vas muy bien! ⭐</p>
+                        <p class="rank-pct" data-i18n="rank2Pct">70% — 89%</p>
+                        <p class="rank-name" data-i18n="rank2Name">Explorador Espacial</p>
+                        <p class="rank-msg" data-i18n="rank2Msg">¡EXPLORADOR ESPACIAL! — ¡Vas muy bien! ⭐</p>
                     </div>
                 </div>
                 <div class="rank-card rk3">
                     <div class="rank-emoji">⭐</div>
                     <div>
-                        <p class="rank-pct">50% — 69%</p>
-                        <p class="rank-name">Cadete en Entrenamiento</p>
-                        <p class="rank-msg">¡CADETE EN ENTRENAMIENTO! — Sigue así 💙</p>
+                        <p class="rank-pct" data-i18n="rank3Pct">50% — 69%</p>
+                        <p class="rank-name" data-i18n="rank3Name">Cadete en Entrenamiento</p>
+                        <p class="rank-msg" data-i18n="rank3Msg">¡CADETE EN ENTRENAMIENTO! — Sigue así 💙</p>
                     </div>
                 </div>
                 <div class="rank-card rk4">
                     <div class="rank-emoji">💪</div>
                     <div>
-                        <p class="rank-pct">0% — 49%</p>
-                        <p class="rank-name">¡Sigue Practicando!</p>
-                        <p class="rank-msg">¡SIGUE PRACTICANDO! — Cada error es aprendizaje 🔥</p>
+                        <p class="rank-pct" data-i18n="rank4Pct">0% — 49%</p>
+                        <p class="rank-name" data-i18n="rank4Name">¡Sigue Practicando!</p>
+                        <p class="rank-msg" data-i18n="rank4Msg">¡SIGUE PRACTICANDO! — Cada error es aprendizaje 🔥</p>
                     </div>
                 </div>
             </div>
@@ -284,18 +286,18 @@
     <section class="dl-section" id="descargar">
         <div class="container">
             <div class="fade-in">
-                <span class="sec-tag">🆓 Totalmente Gratis</span>
-                <h2 class="sec-title" style="text-align:center;">¡Descarga <span>EduMath</span>!</h2>
-                <p>Sin instalaciones complicadas. Solo descarga, haz doble clic y ¡a jugar! Compatible con Windows.</p>
-                <a href="https://github.com/TheNarratorVIMMXX/EduMath/releases/latest" class="dl-btn" target="_blank">
+                <span class="sec-tag" data-i18n="dlTag">🆓 Totalmente Gratis</span>
+                <h2 class="sec-title" style="text-align:center;" data-i18n="dlTitle">¡Descarga <span>EduMath</span>!</h2>
+                <p data-i18n="dlDesc">Sin instalaciones complicadas. Solo descarga, haz doble clic y ¡a jugar! Compatible con Windows.</p>
+                <a href="https://github.com/TheNarratorVIMMXX/EduMath/releases/latest" class="dl-btn" target="_blank" data-i18n="dlBtn">
                     🚀 Descargar EduMath.exe
                 </a>
                 <div class="req-chips">
-                    <div class="req-chip">🪟 Windows <span>10/11</span></div>
-                    <div class="req-chip">🖥️ Pantalla <span>1000×700+</span></div>
-                    <div class="req-chip">💾 Solo <span>~30 MB</span></div>
-                    <div class="req-chip">⚡ <span>Sin instalación</span></div>
-                    <div class="req-chip">🔊 Con <span>sonido</span></div>
+                    <div class="req-chip" data-i18n="chip1">🪟 Windows <span data-i18n="chip1Val" >10/11</span></div>
+                    <div class="req-chip" data-i18n="chip2">🖥️ Pantalla <span data-i18n="chip2Val" >1000×700+</span></div>
+                    <div class="req-chip" data-i18n="chip3">💾 Solo <span data-i18n="chip3Val" >~30 MB</span></div>
+                    <div class="req-chip" data-i18n="chip4">⚡ <span data-i18n="chip4Val" >Sin instalación</span></div>
+                    <div class="req-chip" data-i18n="chip5">🔊 Con <span data-i18n="chip5Val" >sonido</span></div>
                 </div>
             </div>
         </div>
@@ -306,7 +308,7 @@
         <p>© 2025 Carlos Gabriel Magallanes López &nbsp;·&nbsp; 
             <a href="https://github.com/TheNarratorVIMMXX/EduMath" target="_blank">GitHub</a> &nbsp;·&nbsp; 
             <a href="https://mailto:cgmagallanes23@gmail.com">cgmagallanes23@gmail.com</a> &nbsp;·&nbsp; 
-            Hecho con 💛 para estudiantes de primaria
+            <span data-i18n="footerMade">Hecho con 💛 para estudiantes de primaria</span>
         </p>
     </footer>
 
