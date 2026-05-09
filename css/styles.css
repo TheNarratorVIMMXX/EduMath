@@ -779,6 +779,29 @@ footer a{color: var(--yellow); text-decoration: none;}
 .fade-in{opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease,transform 0.7s ease;}   /* Animación de Aparición al Hacer Scroll con un Efecto de Deslizamiento hacia Arriba y Desvanecimiento */
 .fade-in.visible{opacity: 1; transform: translateY(0);}                                                 /* Hacer Visible el Elemento */
 
+/* Botón Flotante de Cambio de Idioma */
+#langToggleBtn {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 999;
+    background: var(--yellow);
+    color: #1a237e;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 22px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: 0 6px 24px rgba(255, 215, 0, 0.45);
+    transition: all 0.3s;
+}
+
+#langToggleBtn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 12px 36px rgba(255, 215, 0, 0.6);
+}
+
 /* Responsive Design para Dispositivos Móviles */
 @media(max-width: 960px){
 
@@ -793,7 +816,12 @@ footer a{color: var(--yellow); text-decoration: none;}
     .screens-grid{grid-template-columns: 1fr;}                                                          /* Cuadrícula de Capturas de Pantalla: Cambiar a una Sola Columna */
     .ranks-grid{grid-template-columns: 1fr;}                                                            /* Cuadrícula de Rangos o Logros: Cambiar a una Sola Columna */ 
     .sf1,.sf2{display: none;}                                                                           /* Capturas de Pantalla Flotantes del Hero: Ocultar en Pantallas Pequeñas para Evitar Saturación Visual */ 
-    
+    #langToggleBtn {
+        bottom: 16px;
+        right: 16px;
+        padding: 10px 16px;
+        font-size: 0.82rem;
+    }
 }
 
 /*****************************************************************************************************************************************************************************/
