@@ -95,13 +95,13 @@ const translations = {
         dlBtn:              "🚀 Descargar EduMath.exe",
         chip1:              "🪟 Windows",
         chip1Val:           "10/11",
-        chip2:              "🖥️ Pantalla",
+        chip2:    "Pantalla",
         chip2Val:           "1000×700+",
-        chip3:              "💾 Solo",
+        chip3:    "Solo",
         chip3Val:           "~30 MB",
         chip4:              "⚡",
         chip4Val:           "Sin instalación",
-        chip5:              "🔊 Con",
+        chip5:    "Con",
         chip5Val:           "sonido",
         // Footer
         footerMade:         "Hecho con 💛 para estudiantes de primaria",
@@ -190,13 +190,13 @@ const translations = {
         dlBtn:              "🚀 Download EduMath.exe",
         chip1:              "🪟 Windows",
         chip1Val:           "10/11",
-        chip2:              "🖥️ Screen",
+        chip2:              "Screen",
         chip2Val:           "1000×700+",
-        chip3:              "💾 Only",
+        chip3:              "Only",
         chip3Val:           "~30 MB",
         chip4:              "⚡",
         chip4Val:           "No install",
-        chip5:              "🔊 With",
+        chip5:              "With",
         chip5Val:           "sound",
         // Footer
         footerMade:         "Made with 💛 for elementary students",
@@ -219,6 +219,10 @@ function applyLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(element => {                               // Recorrer Elementos con Atributo data-i18n
         const key = element.getAttribute('data-i18n');                                          // Obtener Atributo data-i18n
         if (translation[key]) element.textContent = translation[key];                           // Reemplazar Texto con Traducción Correspondiente
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(element => {                          // Texto con HTML interno (spans de color)
+        const key = element.getAttribute('data-i18n-html');                                     // Obtenere Atributo data-i18n
+        if (translation[key]) element.innerHTML = translation[key];                             // Reemplazar Texto con Traducción Correspondiente             
     });
     document.documentElement.setAttribute('lang', lang);                                        // Actualizar Atributo lang del HTML para Accesibilidad
     const btn = document.getElementById('langToggleBtn');                                       // Obtener el Botón por su ID
