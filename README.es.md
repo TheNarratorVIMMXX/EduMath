@@ -16,7 +16,7 @@ Un emocionante juego educativo de matemáticas con una cautivadora temática esp
 ## 🎬 Vista Previa
 
 <div align="center">
-  <img src="assets/preview.gif" alt="EduMath Vista Previa"/>
+  <img src="assets/gifs/preview.gif" alt="EduMath Vista Previa"/>
 </div>
 
 ---
