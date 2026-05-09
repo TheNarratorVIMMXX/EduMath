@@ -16,7 +16,7 @@ An exciting educational math game with a captivating space theme, designed for e
 ## 🎬 Preview
 
 <div align="center">
-  <img src="assets/preview.gif" alt="EduMath Preview"/>
+  <img src="assets/gifs/preview.gif" alt="EduMath Preview"/>
 </div>
 
 ---
