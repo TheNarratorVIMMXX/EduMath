@@ -218,7 +218,7 @@ function applyLanguage(lang) {
     const translation = translations[lang];                                                     // Obtener Traducción según el Lenguaje
     document.querySelectorAll('[data-i18n]').forEach(element => {                               // Recorrer Elementos con Atributo data-i18n
         const key = element.getAttribute('data-i18n');                                          // Obtener Atributo data-i18n
-        if (translation[key]) element.textContent = translation[key];                           // Reemplazar Texto con Traducción Correspondiente
+        if (translation[key]) element.innerHTML = translation[key];                             // Reemplazar Texto con Traducción Correspondiente
     });
     document.querySelectorAll('[data-i18n-html]').forEach(element => {                          // Texto con HTML interno (spans de color)
         const key = element.getAttribute('data-i18n-html');                                     // Obtenere Atributo data-i18n
