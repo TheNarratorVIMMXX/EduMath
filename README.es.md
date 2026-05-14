@@ -3,7 +3,7 @@
 # 🚀 EduMath - Juego Educativo de Matemáticas
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python&logoColor=white)
-![Arcade](https://img.shields.io/badge/Arcade-Library-FF6B6B?style=for-the-badge&logo=python&logoColor=white)
+![Arcade](https://img.shields.io/badge/Arcade-3.3.2-FF6B6B?style=for-the-badge&logo=python&logoColor=white)
 ![Type](https://img.shields.io/badge/Tipo-Juego_Educativo-8B008B?style=for-the-badge)
 ![Grades](https://img.shields.io/badge/Grados-1°_a_6°-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/Licencia-Propietaria-red?style=for-the-badge)
